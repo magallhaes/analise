@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "analise de vendas"
+version = "1"
+description = ""
+authors = ["Leonardo Magalhaes"]
+license = "particular"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.2.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
