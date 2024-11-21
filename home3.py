@@ -41,11 +41,15 @@ st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-a
 st.markdown('<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">', unsafe_allow_html=True)
 
 # Configuração regional para formato brasileiro
-locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
+#locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
 
 # Função para formatar valores em Real
+#def formatar_real(valor):
+    #return locale.currency(valor, grouping=True, symbol=True)
+
+# Função para formatar valores em Real manualmente
 def formatar_real(valor):
-    return locale.currency(valor, grouping=True, symbol=True)
+    return f"R$ {valor:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
 
 # Carregar dados e cachear
 @st.cache_data
