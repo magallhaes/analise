@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import locale
+#import locale
 import numpy as np
 from streamlit_extras.metric_cards import style_metric_cards
 from grafico_vendedor import (
@@ -22,11 +22,13 @@ icon ="assets/images/fav.svg" # Insira o caminho do seu logo aqui
 st.logo(logo, icon_image=icon)
 
 # Configuração regional para formato brasileiro
-locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
-
-# Função para formatar valores em Real
+#locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
+# Função para formatar valores em Real manualmente
 def formatar_real(valor):
-    return locale.currency(valor, grouping=True, symbol=True)
+    return f"R$ {valor:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
+# Função para formatar valores em Real
+#def formatar_real(valor):
+#    return locale.currency(valor, grouping=True, symbol=True)
 
 # Carregar dados e cachear
 @st.cache_data
