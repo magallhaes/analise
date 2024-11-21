@@ -4,7 +4,7 @@ from typing import Optional
 import plotly.express as px
 import plotly.graph_objs as go
 import numpy as np
-import locale
+#import locale
 from typing import Optional
 
 def criar_grafico_evolucao_vendas(dados: pd.DataFrame) -> Optional[go.Figure]:
