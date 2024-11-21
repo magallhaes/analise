@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 #from login import login
 from pathlib import Path
-import locale
+#import locale
 from io import BytesIO
 import numpy as np
 from streamlit_extras.metric_cards import style_metric_cards
