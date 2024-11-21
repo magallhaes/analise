@@ -12,10 +12,11 @@ import streamlit.components.v1 as components
 
 
 # Configuração do locale para o formato de moeda brasileira
-locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
+#locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
 
+# Função para formatar valores em Real manualmente
 def formatar_real(valor):
-    return locale.currency(valor, grouping=True, symbol=True)
+    return f"R$ {valor:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
 
 @st.cache_data
 def carregar_dados():
