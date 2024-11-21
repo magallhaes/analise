@@ -106,6 +106,17 @@ h1 {
             font-size: 15px;
             color: #E74E0F;
         }
+        .card::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 5px;
+            background-color: #B2EBF2;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
         .tabela-responsiva {
             overflow-x: auto;
             margin-bottom: 20px;
