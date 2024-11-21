@@ -76,6 +76,10 @@ div[data-testid="metric-container"] > div:last-child {
 div[data-testid="metric-container"] .stMetric-value {
     font-size: 7px;  /* Reduzir o tamanho dos valores aqui */
 }
+.st-emotion-cache-1xarl3l {
+    font-size: 2.0rem;
+    padding-bottom: 0.25rem;
+}
 
 .st-emotion-cache-ekc6ea {
     font-size: 1.0rem;
